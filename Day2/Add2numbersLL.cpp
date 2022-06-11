@@ -17,8 +17,8 @@ Node* reverse(Node* head){
     Node* next=NULL;
 
     while(curr!=NULL){
-        next=head->next;
-        head->next=prev;
+        next=curr->next;
+        curr->next=prev;
         prev=curr;
         curr=next;
     }
