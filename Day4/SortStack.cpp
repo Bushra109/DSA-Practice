@@ -7,10 +7,14 @@ void SortInsert(stack<int> &st , int x){
         return;
     }
 
+
+    //when not found store the top element and go on searching the position to insert
     int num=st.top();
     st.pop();
 
     SortInsert(st,x);
+
+    //after you return a sorted stack,push back the element you poped
 
     st.push(num);
 }
