@@ -16,6 +16,7 @@ queue<int> rev(queue<int> q)
         q.push(num);
         s.pop();
     }
+    
    return q;
 }
     
